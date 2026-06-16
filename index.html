@@ -1,215 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>RoboRush</title>
+<div class="grid">
 
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-
-<style>
-:root{
-  --bg:#0a0a0f;
-  --panel:#111118;
-  --border:#1e1e2e;
-  --text:#f5f0e8;
-  --muted:#7a7a9a;
-  --accent:#4af0c4;
-  --mono:'Space Mono', monospace;
-  --font:'Space Grotesk', sans-serif;
-}
-
-*{margin:0;padding:0;box-sizing:border-box;}
-body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--font);
-  line-height:1.6;
-}
-
-/* NAV */
-nav{
-  position:fixed;
-  top:0;left:0;right:0;
-  display:flex;
-  justify-content:space-between;
-  padding:1rem 2rem;
-  background:rgba(10,10,15,0.9);
-  border-bottom:1px solid var(--border);
-}
-.logo{color:var(--accent);font-family:var(--mono);}
-nav a{color:var(--muted);text-decoration:none;margin-left:1rem;font-size:0.9rem;}
-nav a:hover{color:var(--text);}
-.cta{background:var(--accent);color:#000;padding:0.5rem 1rem;border-radius:4px;font-weight:700;}
-
-/* HERO */
-.hero{
-  padding:9rem 2rem 4rem;
-  text-align:left;
-}
-.hero h1{
-  font-size:3rem;
-}
-.hero h1 span{color:var(--accent);}
-.hero p{color:var(--muted);max-width:500px;margin-top:1rem;}
-
-.btn{
-  display:inline-block;
-  margin-top:1.5rem;
-  padding:0.8rem 1.5rem;
-  border-radius:4px;
-  font-weight:700;
-  text-decoration:none;
-}
-.btn-primary{
-  background:var(--accent);
-  color:#000;
-}
-.btn-secondary{
-  border:1px solid var(--border);
-  color:var(--text);
-  margin-left:1rem;
-}
-
-/* SECTIONS */
-section{padding:4rem 2rem;border-top:1px solid var(--border);}
-h2{margin-bottom:1rem;}
-.muted{color:var(--muted);}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:1rem;
-}
-
-.card{
-  background:var(--panel);
-  padding:1.5rem;
-  border:1px solid var(--border);
-  border-radius:6px;
-}
-
-.card h3{margin-bottom:0.5rem;color:var(--accent);}
-.tag{
-  font-size:0.75rem;
-  color:var(--muted);
-  margin-top:0.5rem;
-}
-
-/* FOOTER */
-footer{
-  padding:2rem;
-  text-align:center;
-  color:var(--muted);
-  border-top:1px solid var(--border);
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-  <div class="logo">RoboRush//</div>
-  <div>
-    <a href="#products">Products</a>
-    <a href="#rentals">Rentals</a>
-    <a href="#contact">Contact</a>
-    <a class="cta" href="https://wa.me/918744919293>Order</a>
+  <div class="card">
+    <h3>Motor Drivers</h3>
+    L298N<br>
+    BTS7960<br>
+    Dual Channel ESC (60A)
+    <div class="tag">Control</div>
   </div>
-</nav>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>Robotics Parts.<br><span>Fast.</span> For Students.</h1>
-  <p>
-    We supply electronics & robotics components for school projects, competitions, and DIY builds.
-    Fast sourcing. Trusted by student teams.
-  </p>
+  <div class="card">
+    <h3>Sensors</h3>
+    IR Sensor<br>
+    Ultrasonic Sensor<br>
+    RFID Module + Card
+    <div class="tag">Detection</div>
+  </div>
 
-  <a class="btn btn-primary" href="https://wa.me/91YOURNUMBER">Order on WhatsApp</a>
-  <a class="btn btn-secondary" href="#products">View Products</a>
+  <div class="card">
+    <h3>Motors</h3>
+    500 RPM DC Johnson Motor<br>
+    Servo Motors
+    <div class="tag">Movement</div>
+  </div>
+
+  <div class="card">
+    <h3>Structure</h3>
+    Metal Chassis (RoboRace)<br>
+    Wheels<br>
+    Nuts & Bolts
+    <div class="tag">Mechanical</div>
+  </div>
+
 </div>
-
-<!-- PRODUCTS -->
-<section id="products">
-  <h2>Products</h2>
-  <p class="muted">Core components available for school robotics projects</p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Controllers</h3>
-      Arduino Uno<br>ESP32
-      <div class="tag">Boards</div>
-    </div>
-
-    <div class="card">
-      <h3>Motor Drivers</h3>
-      L298N<br>BTS7960<br>Dual channel ESC 60 amps
-      <div class="tag">Control</div>
-    </div>
-
-    <div class="card">
-      <h3>Sensors</h3>
-      IR Sensor<br>Ultrasonic<br>Rfid Card and sensor
-      <div class="tag">Detection</div>
-    </div>
-
-    <div class="card">
-      <h3>Motors</h3>
-      500 RPM DC Johnson Motors<br>Servo Motors
-      <div class="tag">Movement</div>
-    </div>
-  </div>
-</section>
-
-  <div class="card">
-      <h3>Electronic Components</h3>
-      LEds<br>Resistors<br>Buzzers<br>Breadbords<br>Jumper Wires
-      <div class="tag">Movement</div>
-    </div>
-  </div>
-</section>
-
-    <div class="card">
-      <h3>Structure</h3>
-      Metal CHasis(RoboRace)<br>Wheels<br>Nuts
-      <div class="tag">Movement</div>
-    </div>
-  </div>
-</section>
-  
-
-<!-- RENTALS -->
-<section id="rentals">
-  <h2>Rentals</h2>
-  <p class="muted">Equipment available for short-term competition use</p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>FS-i6 Controller</h3>
-      Remote control system for robotics projects
-      <div class="tag">₹/day + deposit</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p class="muted">Fast response via WhatsApp</p>
-
-  <div class="card">
-    <p><b>WhatsApp:</b> +91 8744919293</p>
-    <p><b>Location:</b> Delhi, India</p>
-    <br>
-    <a class="btn btn-primary" href="https://wa.me/91YOURNUMBER">Message Now</a>
-  </div>
-</section>
-
-<footer>
-  RoboRush // Student Robotics Supply System
-</footer>
-
-</body>
-</html>
